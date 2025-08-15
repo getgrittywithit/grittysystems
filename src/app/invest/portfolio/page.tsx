@@ -12,7 +12,7 @@ export default function PortfolioInvestmentPage() {
           <InvestmentPortal
             tiers={portfolioTiers}
             title="Portfolio Investment"
-            description="Invest in the entire GrittySystem ecosystem. Get access to all current and future apps, participate in revenue sharing, and join our community of builders."
+            description="Invest in the entire GrittySystems ecosystem. Get access to all current and future apps, participate in revenue sharing, and join our community of builders."
             type="portfolio"
           />
 

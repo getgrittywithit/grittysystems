@@ -15,7 +15,7 @@ export default function InvestPage() {
               Investment Opportunities
             </h1>
             <p className="text-xl text-slate-600 mb-8 max-w-4xl mx-auto">
-              Join the GrittySystem ecosystem through flexible investment options. 
+              Join the GrittySystems ecosystem through flexible investment options. 
               Choose portfolio investment for the entire ecosystem or project-specific 
               investments for individual apps.
             </p>
@@ -36,7 +36,7 @@ export default function InvestPage() {
                 </div>
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4">Portfolio Investment</h3>
                 <p className="text-slate-600">
-                  Invest in the entire GrittySystem ecosystem. Get access to all apps, 
+                  Invest in the entire GrittySystems ecosystem. Get access to all apps, 
                   revenue sharing across profitable applications, and potential equity consideration.
                 </p>
               </div>
@@ -58,7 +58,7 @@ export default function InvestPage() {
             <InvestmentPortal
               tiers={portfolioTiers}
               title="Portfolio Investment"
-              description="Invest in the entire GrittySystem ecosystem for maximum benefits and diversification"
+              description="Invest in the entire GrittySystems ecosystem for maximum benefits and diversification"
               type="portfolio"
             />
           </section>

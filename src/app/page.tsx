@@ -199,7 +199,7 @@ export default function HomePage() {
                   <ul className="text-left space-y-3 mb-8 text-white/80">
                     <li className="flex items-center gap-3">
                       <span className="text-blue-400">✓</span>
-                      0.1-2% equity stake in GrittySystem
+                      0.1-2% equity stake in GrittySystems
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="text-blue-400">✓</span>
@@ -294,7 +294,7 @@ export default function HomePage() {
       <footer className="bg-slate-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-slate-400">
-            © 2024 GrittySystem. Building the future of AI-powered applications.
+            © 2024 GrittySystems. Building the future of AI-powered applications.
           </p>
         </div>
       </footer>

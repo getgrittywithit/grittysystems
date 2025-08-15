@@ -10,7 +10,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-slate-900 mb-4">
-              Contact GrittySystem
+              Contact GrittySystems
             </h1>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
               Ready to join our ecosystem? Have questions about our apps or investment opportunities? 

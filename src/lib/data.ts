@@ -166,9 +166,9 @@ export const portfolioTiers: InvestmentTier[] = [
     name: 'Equity Partner',
     price: '$5000+',
     type: 'equity',
-    description: 'Equity consideration in GrittySystem',
+    description: 'Equity consideration in GrittySystems',
     benefits: [
-      'Equity consideration in GrittySystem',
+      'Equity consideration in GrittySystems',
       'Board update access',
       'Strategic decision input',
       'All lower tier benefits',

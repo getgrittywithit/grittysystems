@@ -6,8 +6,8 @@ import { VotingProvider } from '@/lib/voting-context'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'GrittySystem - App Ecosystem Hub',
-  description: 'Interactive landing page and investment opportunities for the GrittySystem app ecosystem',
+  title: 'GrittySystems - App Ecosystem Hub',
+  description: 'Interactive landing page and investment opportunities for the GrittySystems app ecosystem',
 }
 
 export default function RootLayout({

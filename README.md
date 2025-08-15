@@ -1,6 +1,6 @@
-# GrittySystem - App Ecosystem Hub
+# GrittySystems - App Ecosystem Hub
 
-An interactive landing page and investment portal for the GrittySystem app ecosystem, showcasing 8 innovative applications with community voting and investment opportunities.
+An interactive landing page and investment portal for the GrittySystems app ecosystem, showcasing 8 innovative applications with community voting and investment opportunities.
 
 ## Features
 
@@ -113,8 +113,8 @@ This project is optimized for deployment on Vercel:
 
 ## Contributing
 
-This is a commercial project for GrittySystem. For inquiries about partnership or development opportunities, please use the contact form in the application.
+This is a commercial project for GrittySystems. For inquiries about partnership or development opportunities, please use the contact form in the application.
 
 ---
 
-Built with 🔥 by GrittySystem - Innovating the future of AI-powered applications.
+Built with 🔥 by GrittySystems - Innovating the future of AI-powered applications.
