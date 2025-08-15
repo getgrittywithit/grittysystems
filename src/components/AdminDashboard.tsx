@@ -45,8 +45,8 @@ export default function AdminDashboard() {
 
   const getStatusColor = (status: TaskItem['status']) => {
     switch (status) {
-      case 'completed': return 'text-success';
-      case 'in_progress': return 'text-secondary';
+      case 'completed': return 'text-green-500';
+      case 'in_progress': return 'text-orange-500';
       case 'pending': return 'text-muted';
       default: return 'text-muted';
     }
@@ -66,15 +66,15 @@ export default function AdminDashboard() {
       {/* Dashboard Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="card text-center">
-          <div className="text-2xl font-bold text-primary mb-1">127</div>
+          <div className="text-2xl font-bold text-blue-500 mb-1">127</div>
           <div className="text-slate-600 text-sm">Total Votes</div>
         </div>
         <div className="card text-center">
-          <div className="text-2xl font-bold text-success mb-1">$2,340</div>
+          <div className="text-2xl font-bold text-green-500 mb-1">$2,340</div>
           <div className="text-slate-600 text-sm">Investments</div>
         </div>
         <div className="card text-center">
-          <div className="text-2xl font-bold text-secondary mb-1">23</div>
+          <div className="text-2xl font-bold text-orange-500 mb-1">23</div>
           <div className="text-slate-600 text-sm">Comments</div>
         </div>
         <div className="card text-center">
@@ -92,7 +92,7 @@ export default function AdminDashboard() {
               onClick={() => setSelectedTab(tab)}
               className={`py-2 px-1 border-b-2 font-medium text-sm capitalize ${
                 selectedTab === tab
-                  ? 'border-primary text-primary'
+                  ? 'border-primary text-blue-500'
                   : 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300'
               }`}
             >
@@ -131,7 +131,7 @@ export default function AdminDashboard() {
                   </div>
                 </div>
                 <div className="flex space-x-2">
-                  <button className="text-primary hover:text-blue-600 text-sm">Edit</button>
+                  <button className="text-blue-500 hover:text-blue-600 text-sm">Edit</button>
                   <button className="text-red-600 hover:text-red-700 text-sm">Delete</button>
                 </div>
               </div>

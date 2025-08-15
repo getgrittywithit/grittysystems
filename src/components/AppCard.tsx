@@ -39,7 +39,7 @@ export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
           <ul className="space-y-1">
             {app.features.slice(0, isExpanded ? undefined : 3).map((feature, index) => (
               <li key={index} className="text-slate-600 text-sm flex items-start">
-                <span className="text-primary mr-2">•</span>
+                <span className="text-blue-500 mr-2">•</span>
                 {feature}
               </li>
             ))}
@@ -47,7 +47,7 @@ export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
           {app.features.length > 3 && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="text-primary text-sm hover:text-blue-600 mt-1"
+              className="text-blue-500 text-sm hover:text-blue-600 mt-1"
             >
               {isExpanded ? 'Show less' : `Show ${app.features.length - 3} more features`}
             </button>
@@ -64,7 +64,7 @@ export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
                 href={app.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-success text-sm font-medium hover:text-green-600"
+                className="text-green-500 text-sm font-medium hover:text-green-600"
               >
                 Visit Live App →
               </a>

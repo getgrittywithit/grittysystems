@@ -39,7 +39,7 @@ export default function WaitlistForm() {
   if (isSubmitted) {
     return (
       <div className="text-center py-8">
-        <div className="text-success text-2xl mb-2">✓</div>
+        <div className="text-green-500 text-2xl mb-2">✓</div>
         <h3 className="text-lg font-semibold text-slate-900 mb-1">Thanks for joining!</h3>
         <p className="text-slate-600">We'll keep you updated on our progress.</p>
       </div>

@@ -31,7 +31,7 @@ export default function InvestPage() {
           <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12">
               <div className="text-center">
-                <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div className="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                   🏢
                 </div>
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4">Portfolio Investment</h3>
@@ -41,7 +41,7 @@ export default function InvestPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                <div className="bg-orange-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                   🎯
                 </div>
                 <h3 className="text-2xl font-semibold text-slate-900 mb-4">Project Investment</h3>

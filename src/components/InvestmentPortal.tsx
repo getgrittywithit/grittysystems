@@ -25,7 +25,7 @@ export default function InvestmentPortal({ tiers, title, description, type }: In
           >
             {index === 1 && (
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                   Most Popular
                 </span>
               </div>
@@ -33,14 +33,14 @@ export default function InvestmentPortal({ tiers, title, description, type }: In
 
             <div className="text-center mb-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">{tier.name}</h3>
-              <div className="text-3xl font-bold text-primary mb-2">{tier.price}</div>
+              <div className="text-3xl font-bold text-blue-500 mb-2">{tier.price}</div>
               <p className="text-slate-600 text-sm">{tier.description}</p>
             </div>
 
             <ul className="space-y-3 mb-8">
               {tier.benefits.map((benefit, benefitIndex) => (
                 <li key={benefitIndex} className="flex items-start text-sm">
-                  <span className="text-success mr-2 mt-0.5">✓</span>
+                  <span className="text-green-500 mr-2 mt-0.5">✓</span>
                   <span className="text-slate-600">{benefit}</span>
                 </li>
               ))}

@@ -64,7 +64,7 @@ export default function ProjectInvestmentPage() {
               </h3>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                     🎯
                   </div>
                   <h4 className="font-semibold text-slate-900 mb-2">Focused Investment</h4>
@@ -73,7 +73,7 @@ export default function ProjectInvestmentPage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-success text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                     🚀
                   </div>
                   <h4 className="font-semibold text-slate-900 mb-2">Direct Impact</h4>
@@ -82,7 +82,7 @@ export default function ProjectInvestmentPage() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-orange-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                     💡
                   </div>
                   <h4 className="font-semibold text-slate-900 mb-2">Product Influence</h4>

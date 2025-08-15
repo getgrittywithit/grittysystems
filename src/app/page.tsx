@@ -39,15 +39,15 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">8</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">8</div>
                 <div className="text-slate-600">Apps in Development</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-success mb-2">1</div>
+                <div className="text-3xl font-bold text-green-500 mb-2">1</div>
                 <div className="text-slate-600">Live Application</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-secondary mb-2">4</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">4</div>
                 <div className="text-slate-600">Investment Tiers</div>
               </div>
               <div>

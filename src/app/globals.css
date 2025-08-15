@@ -23,26 +23,26 @@
   }
   
   .btn-primary {
-    @apply bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors;
+    @apply bg-blue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors;
   }
   
   .btn-secondary {
-    @apply bg-secondary text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-600 transition-colors;
+    @apply bg-orange-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-600 transition-colors;
   }
   
   .status-live {
-    @apply bg-success text-white;
+    @apply bg-green-500 text-white;
   }
   
   .status-development {
-    @apply bg-secondary text-white;
+    @apply bg-orange-500 text-white;
   }
   
   .status-planning {
-    @apply bg-primary text-white;
+    @apply bg-blue-500 text-white;
   }
   
   .status-backburner {
-    @apply bg-muted text-white;
+    @apply bg-gray-500 text-white;
   }
 }
