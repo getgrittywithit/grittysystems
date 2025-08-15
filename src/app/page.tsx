@@ -61,6 +61,113 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Live Product Showcase - Grit Collective */}
+        <section className="py-16 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 relative overflow-hidden">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-12">
+              <div className="inline-block mb-4 px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white text-lg font-bold">
+                🏆 PROOF OF CONCEPT: LIVE & PROFITABLE
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Meet Grit Collective
+              </h2>
+              <p className="text-xl text-white/90 max-w-4xl mx-auto mb-8">
+                Our flagship e-commerce success story demonstrates the power of AI-driven automation. 
+                <strong className="text-yellow-300"> Profitable since month 3</strong> with <strong className="text-yellow-300">95% automated workflows</strong>.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Live metrics */}
+              <div className="space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div className="text-3xl font-bold text-yellow-300 mb-2">50+</div>
+                    <div className="text-white/80">Active SKUs</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div className="text-3xl font-bold text-green-300 mb-2">95%</div>
+                    <div className="text-white/80">Automated</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div className="text-3xl font-bold text-blue-300 mb-2">5</div>
+                    <div className="text-white/80">Categories</div>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 text-center">
+                    <div className="text-3xl font-bold text-purple-300 mb-2">24/7</div>
+                    <div className="text-white/80">Revenue</div>
+                  </div>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">🛍️ Product Categories</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {['Burnables', 'Wall Art', 'Drinkware', 'Apparel', 'Home Decor'].map((category) => (
+                      <span key={category} className="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                        {category}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Value proposition */}
+              <div className="space-y-6">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">🚀 What Makes It Special</h3>
+                  <ul className="space-y-3 text-white/90">
+                    <li className="flex items-start gap-3">
+                      <span className="text-yellow-300 font-bold">🎨</span>
+                      <span>AI-powered product design automation</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-green-300 font-bold">📱</span>
+                      <span>Seamless Shopify & Printful integration</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-blue-300 font-bold">🤖</span>
+                      <span>Automated social media marketing</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-purple-300 font-bold">📊</span>
+                      <span>Real-time analytics and optimization</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex gap-4">
+                  <a 
+                    href="https://gritcollectiveco.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-white text-slate-900 font-bold py-4 px-6 rounded-xl text-center hover:bg-gray-100 transition-all transform hover:scale-105"
+                  >
+                    🛍️ Shop the Live Store
+                  </a>
+                  <a 
+                    href="#apps" 
+                    className="flex-1 bg-white/20 backdrop-blur-sm border border-white/30 text-white font-bold py-4 px-6 rounded-xl text-center hover:bg-white/30 transition-all"
+                  >
+                    🔍 See the Technology
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Success callout */}
+            <div className="mt-12 text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+              <p className="text-2xl font-bold text-yellow-300 mb-2">
+                This is just the beginning.
+              </p>
+              <p className="text-lg text-white/90">
+                Grit Collective proves our AI-powered ecosystem works. Now imagine 8 more apps like this, 
+                all generating revenue and accessible through your investment.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Stats Section */}
         <section className="py-16 bg-gradient-to-r from-slate-50 to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

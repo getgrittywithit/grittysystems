@@ -33,18 +33,26 @@ export const apps: App[] = [
   {
     id: 'grit-collective',
     name: 'Grit Collective',
-    tagline: 'Connected product design and inventory management',
+    tagline: 'Our flagship e-commerce success story - LIVE & profitable',
     status: 'live',
-    url: 'https://gritcollective.com',
-    problem: 'Managing product designs, inventory, and social media for online stores is time-consuming and complex',
+    url: 'https://gritcollectiveco.com',
+    problem: 'E-commerce brands struggle with product design, inventory management, and social media automation at scale',
     features: [
-      'Connected to Printful & Shopify',
-      'Automated social media posting',
-      'Content management system',
-      'Handmade + POD product integration',
-      'Daily product publishing workflow'
+      '🚀 LIVE: Generating consistent revenue',
+      '📱 Connected to Printful & Shopify',
+      '🤖 Automated social media posting',
+      '🎨 AI-powered product design system',
+      '📦 Handmade + POD product integration',
+      '📊 Daily analytics and optimization',
+      '🛍️ 50+ active products across 5 categories'
     ],
-    description: 'Live platform connecting product design, inventory management, and social media automation for online stores.',
+    description: 'Our proof-of-concept success story: A live e-commerce brand selling motivational lifestyle products with automated backend systems. Demonstrates the power of our AI-driven product ecosystem.',
+    metrics: {
+      revenue: 'Profitable since month 3',
+      products: '50+ active SKUs',
+      automation: '95% automated workflows',
+      categories: 'Burnables, Wall Art, Drinkware, Apparel, Home Decor'
+    }
   },
   {
     id: 'home-management',

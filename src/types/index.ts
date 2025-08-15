@@ -9,6 +9,14 @@ export interface App {
   description: string;
   targetFunding?: number;
   currentFunding?: number;
+  metrics?: {
+    revenue?: string;
+    products?: string;
+    automation?: string;
+    categories?: string;
+    users?: string;
+    growth?: string;
+  };
 }
 
 export interface Vote {
