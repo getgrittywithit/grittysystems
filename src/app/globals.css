@@ -11,6 +11,50 @@
   body {
     @apply bg-gradient-to-br from-slate-50 to-slate-100 text-slate-900;
   }
+  
+  /* Animated gradient background */
+  .hero-gradient {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  /* Pulse animation for CTAs */
+  .pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+  
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Count up animation */
+  .count-up {
+    animation: count-up 2s ease-out forwards;
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4); }
+  100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @layer components {
