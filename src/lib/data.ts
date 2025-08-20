@@ -1,103 +1,37 @@
-import { App, InvestmentTier } from '@/types';
+import { App } from '@/types';
 
 export const apps: App[] = [
   {
-    id: 'phone-app',
-    name: 'Phone App',
-    tagline: 'Switch between brand numbers instantly',
+    id: 'pantrypal-pro',
+    name: 'PantryPal Pro',
+    tagline: 'Smart pantry and meal planning',
     status: 'development',
-    problem: 'Paying monthly fees for multiple phone services and struggling to manage different business lines efficiently',
+    problem: 'Families waste food and money because they don\'t know what\'s in their pantry or how to meal plan effectively',
     features: [
-      'Switch between brand numbers instantly',
-      'Replace OpenPhone and reduce costs',
-      'AI-powered call management',
-      'Unified communication dashboard'
+      'Grocery receipt scanning',
+      'Automatic pantry inventory',
+      'AI meal planning suggestions',
+      'Expiration date tracking',
+      'Shopping list optimization',
+      'Recipe recommendations based on available ingredients'
     ],
-    description: 'Revolutionary phone management system that eliminates the need for multiple phone services while providing AI-powered call management and unified communication dashboard.',
-  },
-  {
-    id: 'triton-handyman',
-    name: 'Triton Handyman Platform',
-    tagline: 'All-in-one handyman business management',
-    status: 'development',
-    problem: 'Handyman businesses juggling estimates, invoicing, scheduling, and customer communication across multiple tools',
-    features: [
-      'Automated estimates and invoicing',
-      'AI phone system integration',
-      'Job scheduling and tracking',
-      'Email workflow automation',
-      'Social media posting automation'
-    ],
-    description: 'Comprehensive platform that streamlines every aspect of handyman business operations from initial contact to job completion.',
+    description: 'Intelligent pantry management system that reduces food waste and optimizes meal planning through AI-powered suggestions.',
   },
   {
     id: 'grit-collective',
     name: 'Grit Collective',
-    tagline: 'Our flagship e-commerce success story - LIVE & profitable',
+    tagline: 'AI-powered e-commerce automation',
     status: 'live',
     url: 'https://gritcollectiveco.com',
     problem: 'E-commerce brands struggle with product design, inventory management, and social media automation at scale',
     features: [
-      '🚀 LIVE: Generating consistent revenue',
-      '📱 Connected to Printful & Shopify',
-      '🤖 Automated social media posting',
-      '🎨 AI-powered product design system',
-      '📦 Handmade + POD product integration',
-      '📊 Daily analytics and optimization',
-      '🛍️ 50+ active products across 5 categories'
+      'Connected to Printful & Shopify',
+      'Automated social media posting',
+      'AI-powered product design system',
+      'Handmade + POD product integration',
+      'Daily analytics and optimization'
     ],
-    description: 'Our proof-of-concept success story: A live e-commerce brand selling motivational lifestyle products with automated backend systems. Demonstrates the power of our AI-driven product ecosystem.',
-    metrics: {
-      revenue: 'Profitable since month 3',
-      products: '50+ active SKUs',
-      automation: '95% automated workflows',
-      categories: 'Burnables, Wall Art, Drinkware, Apparel, Home Decor'
-    }
-  },
-  {
-    id: 'home-management',
-    name: 'Home Management Hub',
-    tagline: 'Family organization made simple',
-    status: 'development',
-    problem: 'Families struggle to organize chores, routines, school communications, and daily tasks efficiently',
-    features: [
-      "Kids' chore and routine portals",
-      'Daily checklist automation',
-      'School email and todo parsing with AI',
-      'Family task coordination',
-      'Progress tracking and rewards'
-    ],
-    description: 'Comprehensive family organization system that brings structure and efficiency to household management.',
-  },
-  {
-    id: 'moe-money',
-    name: 'Moe Money',
-    tagline: 'AI-powered financial insights',
-    status: 'development',
-    problem: 'Current financial apps are either too complex or too simple, lacking AI integration for smart money management',
-    features: [
-      'AI-powered financial insights',
-      'Automated expense categorization',
-      'Smart budgeting recommendations',
-      'Integration with bank accounts',
-      'Goal-based saving strategies'
-    ],
-    description: 'Next-generation financial management app that leverages AI to provide personalized insights and recommendations.',
-  },
-  {
-    id: 'boerne-handy-hub',
-    name: "Boerne's Handy Hub",
-    tagline: 'Local community coordination platform',
-    status: 'planning',
-    problem: 'Small towns lack centralized platforms for local services, recommendations, and community coordination',
-    features: [
-      'Local service directory',
-      'AI-powered recommendations',
-      'Community event coordination',
-      'Local business promotion',
-      'Neighbor-to-neighbor assistance'
-    ],
-    description: 'Community-focused platform designed to connect local services, events, and neighbors in small towns.',
+    description: 'A live e-commerce brand selling motivational lifestyle products with automated backend systems. Demonstrates the power of our AI-driven product ecosystem.',
   },
   {
     id: 'mermaid-jungle',
@@ -110,116 +44,56 @@ export const apps: App[] = [
       'Care scheduling and reminders',
       'Local plant sales platform',
       'Plant health tracking',
-      'Community plant trading'
+      'Community plant trading',
+      'Plant identification with AI'
     ],
     description: 'Specialized platform for plant enthusiasts to manage collections, track care, and connect with local plant communities.',
   },
   {
-    id: 'pantrypal-pro',
-    name: 'PantryPal Pro',
-    tagline: 'Smart pantry and meal planning',
-    status: 'backburner',
-    problem: 'Families waste food and money because they don\'t know what\'s in their pantry or how to meal plan effectively',
+    id: 'phone-app',
+    name: 'AI Phone System',
+    tagline: 'Intelligent multi-line phone management',
+    status: 'development',
+    problem: 'Managing multiple phone lines for different brands or businesses requires expensive services and complex setups',
     features: [
-      'Grocery receipt scanning',
-      'Automatic pantry inventory',
-      'AI meal planning suggestions',
-      'Expiration date tracking',
-      'Shopping list optimization'
+      'Switch between brand numbers instantly',
+      'AI-powered call management',
+      'Unified communication dashboard',
+      'Smart voicemail transcription',
+      'Automated call routing'
     ],
-    description: 'Intelligent pantry management system that reduces food waste and optimizes meal planning through AI-powered suggestions.',
-  }
-];
-
-export const portfolioTiers: InvestmentTier[] = [
-  {
-    name: 'Coffee Supporter',
-    price: '$5-25',
-    type: 'support',
-    description: 'Support our vision',
-    benefits: [
-      'Support our vision',
-      'Quarterly updates',
-      'Early access announcements',
-      'Community Discord access'
-    ]
+    description: 'Revolutionary AI-powered phone management system that handles multiple business lines with intelligent call routing and management.',
   },
   {
-    name: 'Lifetime Member',
-    price: '$99-299',
-    type: 'membership',
-    description: 'Lifetime access to ALL SaaS products',
-    benefits: [
-      'Lifetime access to ALL SaaS products',
-      'Beta testing access',
-      'Priority support',
-      'No monthly fees ever',
-      'Exclusive member community'
-    ]
+    id: 'moe-money',
+    name: 'Moe Money',
+    tagline: 'AI-powered financial insights',
+    status: 'development',
+    problem: 'Current financial apps are either too complex or too simple, lacking AI integration for smart money management',
+    features: [
+      'AI-powered financial insights',
+      'Automated expense categorization',
+      'Smart budgeting recommendations',
+      'Integration with bank accounts',
+      'Goal-based saving strategies',
+      'Predictive spending analysis'
+    ],
+    description: 'Next-generation financial management app that leverages AI to provide personalized insights and recommendations.',
   },
   {
-    name: 'Revenue Partner',
-    price: '$500-2000',
-    type: 'revenue',
-    description: 'Revenue sharing across profitable apps',
-    benefits: [
-      'Revenue sharing across profitable apps',
-      'Quarterly profit reports',
-      'Strategy input calls',
-      'Lifetime access',
-      'Partner recognition'
-    ]
-  },
-  {
-    name: 'Equity Partner',
-    price: '$5000+',
-    type: 'equity',
-    description: 'Equity consideration in GrittySystems',
-    benefits: [
-      'Equity consideration in GrittySystems',
-      'Board update access',
-      'Strategic decision input',
-      'All lower tier benefits',
-      'Annual partner meeting'
-    ]
-  }
-];
-
-export const projectTiers: InvestmentTier[] = [
-  {
-    name: 'Project Backer',
-    price: '$50-200',
-    type: 'support',
-    description: 'Lifetime access to specific app',
-    benefits: [
-      'Lifetime access to specific app',
-      'Development updates',
-      'Feature request priority',
-      'Beta access'
-    ]
-  },
-  {
-    name: 'Project Partner',
-    price: '$500-1500',
-    type: 'revenue',
-    description: 'Revenue sharing for specific app',
-    benefits: [
-      'Revenue sharing for specific app',
-      'Product roadmap input',
-      'Monthly dev calls',
-      'All backer benefits'
-    ]
-  },
-  {
-    name: 'Project Co-Owner',
-    price: '$2000+',
-    type: 'equity',
-    description: 'Significant product direction input',
-    benefits: [
-      'Significant product direction input',
-      'Revenue sharing',
-      'Co-marketing opportunities',
-      'Partnership recognition'
-    ]
+    id: 'home-management',
+    name: 'Home Management Hub',
+    tagline: 'Family organization made simple',
+    status: 'development',
+    problem: 'Families struggle to organize chores, routines, school communications, and daily tasks efficiently',
+    features: [
+      "Kids' chore and routine portals",
+      'Daily checklist automation',
+      'School email and todo parsing with AI',
+      'Family task coordination',
+      'Progress tracking and rewards',
+      'Smart home integration'
+    ],
+    description: 'Comprehensive family organization system that brings structure and efficiency to household management.',
   }
 ];

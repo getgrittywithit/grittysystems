@@ -7,16 +7,6 @@ export interface App {
   features: string[];
   url?: string;
   description: string;
-  targetFunding?: number;
-  currentFunding?: number;
-  metrics?: {
-    revenue?: string;
-    products?: string;
-    automation?: string;
-    categories?: string;
-    users?: string;
-    growth?: string;
-  };
 }
 
 export interface Vote {
@@ -37,43 +27,13 @@ export interface Comment {
   createdAt: Date;
 }
 
-export interface Investment {
-  id: string;
-  email: string;
-  name: string;
-  type: 'portfolio' | 'project';
-  tier: string;
-  amount: number;
-  appId?: string; // for project investments
-  status: 'pending' | 'confirmed' | 'complete';
-  benefits: string[];
-  createdAt: Date;
-}
-
 export interface Contact {
   id: string;
   email: string;
   name: string;
-  type: 'investor' | 'beta' | 'partner' | 'press' | 'general';
+  type: 'beta' | 'partner' | 'press' | 'general';
   message: string;
   subscribed: boolean;
   preferences: string[];
   createdAt: Date;
-}
-
-export interface MemberAccess {
-  id: string;
-  email: string;
-  investmentId: string;
-  appAccess: string[];
-  accessLevel: 'lifetime' | 'beta' | 'partner' | 'equity';
-  isActive: boolean;
-}
-
-export interface InvestmentTier {
-  name: string;
-  price: string;
-  type: 'support' | 'membership' | 'revenue' | 'equity';
-  benefits: string[];
-  description: string;
 }

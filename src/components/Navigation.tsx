@@ -17,14 +17,14 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-slate-700 hover:text-slate-900 transition-colors">
-              Apps
+            <Link href="/#apps" className="text-slate-700 hover:text-slate-900 transition-colors">
+              Projects
             </Link>
             <Link href="/voting" className="text-slate-700 hover:text-slate-900 transition-colors">
               Voting
             </Link>
-            <Link href="/invest" className="text-slate-700 hover:text-slate-900 transition-colors">
-              Invest
+            <Link href="https://gritcollectiveco.com" target="_blank" className="text-slate-700 hover:text-slate-900 transition-colors">
+              Live Demo
             </Link>
             <Link href="/contact" className="text-slate-700 hover:text-slate-900 transition-colors">
               Contact
@@ -49,14 +49,14 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link href="/" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
-                Apps
+              <Link href="/#apps" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
+                Projects
               </Link>
               <Link href="/voting" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
                 Voting
               </Link>
-              <Link href="/invest" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
-                Invest
+              <Link href="https://gritcollectiveco.com" target="_blank" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
+                Live Demo
               </Link>
               <Link href="/contact" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
                 Contact
