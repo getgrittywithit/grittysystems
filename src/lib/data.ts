@@ -4,18 +4,18 @@ export const apps: App[] = [
   {
     id: 'pantrypal-pro',
     name: 'PantryPal Pro',
-    tagline: 'Smart pantry and meal planning',
+    tagline: 'Your AI pantry butler that knows everything you have',
     status: 'development',
-    problem: 'Families waste food and money because they don\'t know what\'s in their pantry or how to meal plan effectively',
+    problem: 'Busy families face the overwhelming "full pantry, nothing to eat" feeling daily, leading to meal planning stress and $1,500+ in annual food waste',
     features: [
-      'Grocery receipt scanning',
-      'Automatic pantry inventory',
-      'AI meal planning suggestions',
-      'Expiration date tracking',
-      'Shopping list optimization',
-      'Recipe recommendations based on available ingredients'
+      'Instant meal suggestions based on what you actually have',
+      'AI-powered pantry butler with step-by-step cooking guides',
+      'Automatic inventory tracking via grocery receipt scanning',
+      'Smart leftover tracking and usage suggestions',
+      'Ad-free experience focused on your family\'s needs',
+      'Save 10x the app cost through reduced food waste alone'
     ],
-    description: 'Intelligent pantry management system that reduces food waste and optimizes meal planning through AI-powered suggestions.',
+    description: 'Your trusted pantry butler that eliminates the "nothing to eat" feeling by providing instant meal suggestions based on actual pantry contents, complete with step-by-step guides and smart waste reduction.',
   },
   {
     id: 'grit-collective',
