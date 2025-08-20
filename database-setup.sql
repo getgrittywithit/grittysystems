@@ -1,5 +1,5 @@
--- Create contacts table for GrittySystems contact form
-CREATE TABLE IF NOT EXISTS contacts (
+-- Create grittysystems_contacts table (separate from existing contacts table)
+CREATE TABLE IF NOT EXISTS grittysystems_contacts (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   name text NOT NULL,
   email text NOT NULL,
@@ -10,26 +10,26 @@ CREATE TABLE IF NOT EXISTS contacts (
 );
 
 -- Create indexes for better performance
-CREATE INDEX IF NOT EXISTS idx_contacts_created_at ON contacts (created_at DESC);
-CREATE INDEX IF NOT EXISTS idx_contacts_type ON contacts (type);
-CREATE INDEX IF NOT EXISTS idx_contacts_email ON contacts (email);
+CREATE INDEX IF NOT EXISTS idx_grittysystems_contacts_created_at ON grittysystems_contacts (created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_grittysystems_contacts_type ON grittysystems_contacts (type);
+CREATE INDEX IF NOT EXISTS idx_grittysystems_contacts_email ON grittysystems_contacts (email);
 
 -- Enable Row Level Security (optional but recommended)
-ALTER TABLE contacts ENABLE ROW LEVEL SECURITY;
+ALTER TABLE grittysystems_contacts ENABLE ROW LEVEL SECURITY;
 
 -- Create a policy for public inserts (contact form submissions)
-CREATE POLICY "Allow public contact form submissions" ON contacts
+CREATE POLICY "Allow public grittysystems contact form submissions" ON grittysystems_contacts
   FOR INSERT 
   WITH CHECK (true);
 
 -- Create a policy for authenticated reads (admin dashboard)
-CREATE POLICY "Allow authenticated reads" ON contacts
+CREATE POLICY "Allow authenticated grittysystems reads" ON grittysystems_contacts
   FOR SELECT 
   USING (auth.role() = 'authenticated');
 
 -- Grant necessary permissions
-GRANT INSERT ON contacts TO anon;
-GRANT SELECT ON contacts TO authenticated;
+GRANT INSERT ON grittysystems_contacts TO anon;
+GRANT SELECT ON grittysystems_contacts TO authenticated;
 
 -- Verify table creation
-SELECT 'Contacts table created successfully!' as status;
+SELECT 'GrittySystems contacts table created successfully!' as status;

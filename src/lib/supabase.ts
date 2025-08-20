@@ -19,7 +19,7 @@ export interface Contact {
 // Insert a new contact
 export async function insertContact(contactData: Omit<Contact, 'id' | 'created_at'>) {
   const { data, error } = await supabase
-    .from('contacts')
+    .from('grittysystems_contacts')
     .insert([contactData])
     .select()
     .single();
@@ -35,7 +35,7 @@ export async function insertContact(contactData: Omit<Contact, 'id' | 'created_a
 // Get all contacts (for admin)
 export async function getContacts() {
   const { data, error } = await supabase
-    .from('contacts')
+    .from('grittysystems_contacts')
     .select('*')
     .order('created_at', { ascending: false });
 
