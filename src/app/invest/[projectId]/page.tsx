@@ -7,13 +7,13 @@ import { apps } from '@/lib/data';
 import { pitchDeckData } from '@/lib/pitch-data';
 
 interface ProjectPitchPageProps {
-  params: {
+  params: Promise<{
     projectId: string;
-  };
+  }>;
 }
 
-export default function ProjectPitchPage({ params }: ProjectPitchPageProps) {
-  const { projectId } = params;
+export default async function ProjectPitchPage({ params }: ProjectPitchPageProps) {
+  const { projectId } = await params;
   
   const app = apps.find(a => a.id === projectId);
   const pitchData = pitchDeckData[projectId];
