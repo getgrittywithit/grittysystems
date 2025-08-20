@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { insertContact } from '@/lib/supabase';
+import { sendUserConfirmationEmail, sendAdminNotificationEmail } from '@/lib/email';
 
 export async function POST(request: NextRequest) {
   try {
@@ -31,29 +33,52 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Here you would typically save to a database and send emails
-    // For now, we'll just log it and return success
+    // Save to Supabase
     const contactData = {
       name,
       email,
       type,
       message,
       subscribed: !!subscribed,
-      timestamp: new Date().toISOString(),
     };
 
-    console.log('Contact form submission:', contactData);
+    try {
+      const savedContact = await insertContact(contactData);
+      
+      // Prepare email data
+      const emailData = {
+        ...contactData,
+        contactId: savedContact.id
+      };
 
-    // Simulate processing time
-    await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send emails (don't fail the request if emails fail)
+      try {
+        await Promise.all([
+          sendUserConfirmationEmail(emailData),
+          sendAdminNotificationEmail(emailData)
+        ]);
+        console.log('Emails sent successfully for contact:', savedContact.id);
+      } catch (emailError) {
+        console.error('Email sending failed (non-critical):', emailError);
+        // Continue - don't fail the request if emails fail
+      }
+      
+      console.log('Contact saved to Supabase:', savedContact.id);
 
-    return NextResponse.json(
-      { 
-        message: 'Contact form submitted successfully',
-        contactId: Date.now().toString() // Mock contact ID
-      },
-      { status: 200 }
-    );
+      return NextResponse.json(
+        { 
+          message: 'Contact form submitted successfully',
+          contactId: savedContact.id
+        },
+        { status: 200 }
+      );
+    } catch (supabaseError) {
+      console.error('Supabase error:', supabaseError);
+      return NextResponse.json(
+        { error: 'Failed to save contact information' },
+        { status: 500 }
+      );
+    }
   } catch (error) {
     console.error('Contact API error:', error);
     return NextResponse.json(
