@@ -38,23 +38,21 @@ export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
           </span>
         </div>
 
-        {/* Metrics showcase */}
-        {app.metrics && (
-          <div className="grid grid-cols-2 gap-4 mb-6 p-4 bg-white/60 backdrop-blur-sm rounded-lg border border-white/40">
-            <div className="text-center">
-              <div className="text-lg font-bold text-green-600">{app.metrics.products}</div>
-              <div className="text-xs text-slate-600">Active Products</div>
-            </div>
-            <div className="text-center">
-              <div className="text-lg font-bold text-blue-600">{app.metrics.automation}</div>
-              <div className="text-xs text-slate-600">Automated</div>
-            </div>
-            <div className="text-center col-span-2">
-              <div className="text-sm font-semibold text-purple-600">{app.metrics.revenue}</div>
-              <div className="text-xs text-slate-600">Revenue Status</div>
-            </div>
+        {/* Live status showcase for Grit Collective */}
+        <div className="grid grid-cols-2 gap-4 mb-6 p-4 bg-white/60 backdrop-blur-sm rounded-lg border border-white/40">
+          <div className="text-center">
+            <div className="text-lg font-bold text-green-600">Live Store</div>
+            <div className="text-xs text-slate-600">Active E-commerce</div>
           </div>
-        )}
+          <div className="text-center">
+            <div className="text-lg font-bold text-blue-600">AI Powered</div>
+            <div className="text-xs text-slate-600">Automated Systems</div>
+          </div>
+          <div className="text-center col-span-2">
+            <div className="text-sm font-semibold text-purple-600">Real Revenue</div>
+            <div className="text-xs text-slate-600">Proven Success</div>
+          </div>
+        </div>
 
         <div className="space-y-4">
           <div>
