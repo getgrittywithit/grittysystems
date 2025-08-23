@@ -65,20 +65,21 @@ export const apps: App[] = [
     description: 'Revolutionary AI-powered phone management system that handles multiple business lines with intelligent call routing and management.',
   },
   {
-    id: 'moe-money',
-    name: 'Moe Money',
-    tagline: 'AI-powered financial insights',
+    id: 'boernes-handy-hub',
+    name: 'BoernesHandyHub.com',
+    tagline: 'AI-driven town directory for Boerne, Texas',
     status: 'development',
-    problem: 'Current financial apps are either too complex or too simple, lacking AI integration for smart money management',
+    url: 'https://boerneshandyhub.com',
+    problem: 'Boerne residents and visitors struggle to find local services, events, and businesses without relying on generic national platforms that miss local gems',
     features: [
-      'AI-powered financial insights',
-      'Automated expense categorization',
-      'Smart budgeting recommendations',
-      'Integration with bank accounts',
-      'Goal-based saving strategies',
-      'Predictive spending analysis'
+      'AI-powered local business recommendations',
+      'Real-time event calendar with smart notifications',
+      'Community-verified service provider ratings',
+      'Local deals and exclusive Boerne offers',
+      'Neighborhood-specific insights and tips',
+      'Smart search understanding local context'
     ],
-    description: 'Next-generation financial management app that leverages AI to provide personalized insights and recommendations.',
+    description: 'The definitive AI-driven directory for Boerne, Texas, connecting residents and visitors with the best local businesses, services, and community events through intelligent recommendations.',
   },
   {
     id: 'home-management',
