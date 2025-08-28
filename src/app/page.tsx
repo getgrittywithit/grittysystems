@@ -194,7 +194,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {apps.map((app) => (
+              {apps.filter(app => app.visible !== false).map((app) => (
                 <AppCard
                   key={app.id}
                   app={app}

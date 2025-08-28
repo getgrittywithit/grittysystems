@@ -7,6 +7,9 @@ export interface App {
   features: string[];
   url?: string;
   description: string;
+  visible?: boolean;
+  isNonProfit?: boolean;
+  featured?: boolean;
 }
 
 export interface Vote {

@@ -31,7 +31,7 @@ export default function VotingPage() {
                 <div className="text-slate-600 text-sm">Total Votes</div>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
-                <div className="text-2xl font-bold text-green-600 mb-1">{apps.length}</div>
+                <div className="text-2xl font-bold text-green-600 mb-1">{apps.filter(app => app.visible !== false).length}</div>
                 <div className="text-slate-600 text-sm">Apps Available</div>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
@@ -124,7 +124,7 @@ export default function VotingPage() {
               Every vote counts! Click the vote button on any app to show your support for its development priority.
             </p>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {apps.map((app) => (
+              {apps.filter(app => app.visible !== false).map((app) => (
                 <AppCard
                   key={app.id}
                   app={app}

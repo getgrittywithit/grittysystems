@@ -2,6 +2,27 @@ import { App } from '@/types';
 
 export const apps: App[] = [
   {
+    id: 'faith-marie-foundation',
+    name: 'Faith Marie Foundation',
+    tagline: 'Honoring tiny lives, supporting grieving families',
+    status: 'live',
+    url: 'https://faithmarie.org',
+    problem: 'Families experiencing infant loss often feel isolated and lack resources for healing, while their babies\' brief lives go unrecognized by society',
+    features: [
+      'Memorial website creation for angel babies',
+      'Grief support resources and counseling connections',
+      'Care packages for families in NICU',
+      'Annual remembrance events and ceremonies',
+      'Pediatric patient awareness campaigns',
+      'Support groups for bereaved parents',
+      'Educational resources for healthcare providers'
+    ],
+    description: 'A non-profit foundation dedicated to raising awareness for pediatric patients and supporting families through infant loss, ensuring every precious life is remembered and celebrated.',
+    visible: true,
+    isNonProfit: true,
+    featured: true
+  },
+  {
     id: 'pantrypal-pro',
     name: 'PantryPal Pro',
     tagline: 'Your AI pantry butler that knows everything you have',
@@ -16,6 +37,7 @@ export const apps: App[] = [
       'Save 10x the app cost through reduced food waste alone'
     ],
     description: 'Your trusted pantry butler that eliminates the "nothing to eat" feeling by providing instant meal suggestions based on actual pantry contents, complete with step-by-step guides and smart waste reduction.',
+    visible: true
   },
   {
     id: 'grit-collective',
@@ -32,6 +54,7 @@ export const apps: App[] = [
       'Daily analytics and optimization'
     ],
     description: 'A live e-commerce brand selling motivational lifestyle products with automated backend systems. Demonstrates the power of our AI-driven product ecosystem.',
+    visible: true
   },
   {
     id: 'mermaid-jungle',
@@ -48,6 +71,7 @@ export const apps: App[] = [
       'Plant identification with AI'
     ],
     description: 'Specialized platform for plant enthusiasts to manage collections, track care, and connect with local plant communities.',
+    visible: true
   },
   {
     id: 'phone-app',
@@ -63,6 +87,7 @@ export const apps: App[] = [
       'Automated call routing'
     ],
     description: 'Revolutionary AI-powered phone management system that handles multiple business lines with intelligent call routing and management.',
+    visible: true
   },
   {
     id: 'boernes-handy-hub',
@@ -80,6 +105,7 @@ export const apps: App[] = [
       'Smart search understanding local context'
     ],
     description: 'The definitive AI-driven directory for Boerne, Texas, connecting residents and visitors with the best local businesses, services, and community events through intelligent recommendations.',
+    visible: true
   },
   {
     id: 'home-management',
@@ -96,5 +122,6 @@ export const apps: App[] = [
       'Smart home integration'
     ],
     description: 'Comprehensive family organization system that brings structure and efficiency to household management.',
+    visible: true
   }
 ];
