@@ -35,7 +35,7 @@ const mockTasks: TaskItem[] = [
   },
   {
     id: '4',
-    title: 'Add voting analytics',
+    title: 'Add analytics dashboard',
     status: 'completed',
     priority: 'low'
   }
@@ -80,7 +80,7 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="card text-center">
           <div className="text-2xl font-bold text-blue-500 mb-1">127</div>
-          <div className="text-slate-600 text-sm">Total Votes</div>
+          <div className="text-slate-600 text-sm">Total Users</div>
         </div>
         <div className="card text-center">
           <div className="text-2xl font-bold text-green-500 mb-1">$2,340</div>
@@ -261,7 +261,7 @@ export default function AdminDashboard() {
 
       {selectedTab === 'analytics' && (
         <div className="card">
-          <h3 className="text-lg font-semibold text-slate-900 mb-6">Voting Analytics</h3>
+          <h3 className="text-lg font-semibold text-slate-900 mb-6">Analytics Dashboard</h3>
           <div className="text-center text-slate-500 py-8">
             Analytics dashboard coming soon...
           </div>

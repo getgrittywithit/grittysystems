@@ -12,12 +12,6 @@ export interface App {
   featured?: boolean;
 }
 
-export interface Vote {
-  id: string;
-  email: string;
-  appId: string;
-  createdAt: Date;
-}
 
 export interface Comment {
   id: string;

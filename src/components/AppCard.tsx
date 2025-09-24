@@ -2,19 +2,14 @@
 
 import { App } from '@/types';
 import { getStatusColor } from '@/lib/utils';
-import { useVoting } from '@/lib/voting-context';
 import { useState } from 'react';
 
 interface AppCardProps {
   app: App;
-  votes?: number;
-  onVote?: (appId: string) => void;
 }
 
-export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
+export default function AppCard({ app }: AppCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { hasVoted } = useVoting();
-  const userHasVoted = hasVoted(app.id);
   const isLive = app.status === 'live';
   const isGritCollective = app.id === 'grit-collective';
 
@@ -80,30 +75,15 @@ export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
             )}
           </div>
 
-          <div className="flex items-center justify-between pt-4 border-t-2 border-green-200">
-            <div className="flex items-center space-x-4">
-              <div className="text-sm text-slate-700">
-                <span className="font-bold text-green-600">{votes}</span> votes
-              </div>
-              <a
-                href={app.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-green-500 to-blue-500 text-white text-sm font-bold px-4 py-2 rounded-lg hover:from-green-600 hover:to-blue-600 transition-all pulse-glow"
-              >
-                🛍️ Shop Live Store →
-              </a>
-            </div>
-            <button
-              onClick={() => onVote?.(app.id)}
-              className={`text-sm px-4 py-2 rounded-lg font-medium ${
-                userHasVoted 
-                  ? 'bg-green-200 text-green-800 border-2 border-green-300' 
-                  : 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600'
-              }`}
+          <div className="flex items-center justify-center pt-4 border-t-2 border-green-200">
+            <a
+              href={app.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-green-500 to-blue-500 text-white text-sm font-bold px-6 py-3 rounded-lg hover:from-green-600 hover:to-blue-600 transition-all pulse-glow"
             >
-              {userHasVoted ? '✓ Voted' : '🚀 Vote for More Like This'}
-            </button>
+              🛍️ Shop Live Store →
+            </a>
           </div>
         </div>
       </div>
@@ -149,32 +129,17 @@ export default function AppCard({ app, votes = 0, onVote }: AppCardProps) {
           )}
         </div>
 
-        <div className="flex items-center justify-between pt-4 border-t border-slate-200">
-          <div className="flex items-center space-x-4">
-            <div className="text-sm text-slate-600">
-              <span className="font-medium">{votes}</span> votes
-            </div>
-            {app.url && (
-              <a
-                href={app.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-500 text-sm font-medium hover:text-green-600"
-              >
-                Visit Live App →
-              </a>
-            )}
-          </div>
-          <button
-            onClick={() => onVote?.(app.id)}
-            className={`text-sm px-4 py-1 ${
-              userHasVoted 
-                ? 'bg-green-100 text-green-700 border border-green-300 rounded-lg hover:bg-green-200' 
-                : 'btn-primary'
-            }`}
-          >
-            {userHasVoted ? '✓ Voted' : 'Vote for Priority'}
-          </button>
+        <div className="flex items-center justify-center pt-4 border-t border-slate-200">
+          {app.url && (
+            <a
+              href={app.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-500 text-sm font-medium hover:text-green-600"
+            >
+              Visit Live App →
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -1,20 +1,13 @@
 # GrittySystems - App Ecosystem Hub
 
-An interactive landing page and investment portal for the GrittySystems app ecosystem, showcasing 8 innovative applications with community voting and investment opportunities.
+An interactive landing page and investment portal for the GrittySystems app ecosystem, showcasing 8 innovative applications and investment opportunities.
 
 ## Features
 
 ### 🏠 Landing Page
 - Interactive app showcase with 8 applications
 - Live status indicators and feature highlights
-- Community voting system
 - Investment opportunities overview
-
-### 🗳️ Community Voting
-- Vote for app development priorities
-- Real-time voting dashboard
-- Visual analytics and rankings
-- Persistent vote tracking
 
 ### 💰 Investment Portal
 - Portfolio investment in entire ecosystem
@@ -38,8 +31,7 @@ An interactive landing page and investment portal for the GrittySystems app ecos
 - **Framework**: Next.js 14+ with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS with custom design system
-- **State Management**: React Context for voting
-- **API Routes**: Next.js API routes for forms and voting
+- **API Routes**: Next.js API routes for forms
 - **Deployment**: Optimized for Vercel
 
 ## Getting Started
@@ -72,8 +64,7 @@ src/
 │   ├── admin/          # Admin dashboard
 │   ├── api/            # API routes
 │   ├── contact/        # Contact page
-│   ├── invest/         # Investment portal
-│   └── voting/         # Voting dashboard
+│   └── invest/         # Investment portal
 ├── components/         # Reusable components
 ├── lib/               # Utilities and data
 └── types/             # TypeScript definitions

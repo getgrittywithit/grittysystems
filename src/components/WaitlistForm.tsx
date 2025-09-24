@@ -48,9 +48,9 @@ export default function WaitlistForm() {
 
   return (
     <div className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
-      <h3 className="text-lg font-semibold text-slate-900 mb-2">Stay Updated</h3>
+      <h3 className="text-lg font-semibold text-slate-900 mb-2">Follow Our Journey</h3>
       <p className="text-slate-600 mb-4">
-        Get early access to new apps and investment opportunities.
+        Get updates on new projects, development progress, and community initiatives.
       </p>
       
       <form onSubmit={handleSubmit} className="space-y-3">
@@ -67,7 +67,7 @@ export default function WaitlistForm() {
           disabled={isLoading}
           className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isLoading ? 'Joining...' : 'Join Waitlist'}
+          {isLoading ? 'Subscribing...' : 'Stay Connected'}
         </button>
       </form>
     </div>

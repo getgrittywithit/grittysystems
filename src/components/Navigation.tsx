@@ -20,9 +20,6 @@ export default function Navigation() {
             <Link href="/#apps" className="text-slate-700 hover:text-slate-900 transition-colors">
               Projects
             </Link>
-            <Link href="/voting" className="text-slate-700 hover:text-slate-900 transition-colors">
-              Voting
-            </Link>
             <Link href="https://gritcollectiveco.com" target="_blank" className="text-slate-700 hover:text-slate-900 transition-colors">
               Live Demo
             </Link>
@@ -51,9 +48,6 @@ export default function Navigation() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link href="/#apps" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
                 Projects
-              </Link>
-              <Link href="/voting" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
-                Voting
               </Link>
               <Link href="https://gritcollectiveco.com" target="_blank" className="block px-3 py-2 text-slate-700 hover:text-slate-900">
                 Live Demo

@@ -72,7 +72,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">Other Ways to Connect</h3>
                 <div className="space-y-3">
                   <div className="flex items-center p-3 bg-slate-50 rounded-lg">
-                    <span className="text-slate-700">Join our community voting on new features</span>
+                    <span className="text-slate-700">Join our community feedback sessions</span>
                   </div>
                   <div className="flex items-center p-3 bg-slate-50 rounded-lg">
                     <span className="text-slate-700">Follow us for updates and announcements</span>

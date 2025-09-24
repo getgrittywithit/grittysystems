@@ -4,10 +4,7 @@ import Navigation from '@/components/Navigation';
 import AppCard from '@/components/AppCard';
 import WaitlistForm from '@/components/WaitlistForm';
 import { apps } from '@/lib/data';
-import { useVoting } from '@/lib/voting-context';
-
 export default function HomePage() {
-  const { getVoteCount, vote } = useVoting();
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -22,37 +19,37 @@ export default function HomePage() {
           
           <div className="max-w-7xl mx-auto text-center relative z-10">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Transform Your Business with
+              Building the Future with
               <span className="block bg-gradient-to-r from-yellow-300 to-pink-300 bg-clip-text text-transparent">
-                AI-Powered Applications
+                Code & Purpose
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Automate workflows, boost productivity, and scale effortlessly with our suite of intelligent business tools.
-              Join thousands of businesses already transforming their operations.
+              We create meaningful applications that solve real problems - from AI-powered tools to heartfelt non-profits.
+              Explore our journey of turning ideas into impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <a href="#solutions" className="btn-primary pulse-glow transform hover:scale-105 transition-all duration-300 text-lg px-10 py-4">
-                Explore AI Solutions
+              <a href="#apps" className="btn-primary pulse-glow transform hover:scale-105 transition-all duration-300 text-lg px-10 py-4">
+                View Our Projects
               </a>
-              <a href="#apps" className="btn-secondary transform hover:scale-105 transition-all duration-300 text-lg px-10 py-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30">
-                See Live Demos
+              <a href="#about" className="btn-secondary transform hover:scale-105 transition-all duration-300 text-lg px-10 py-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30">
+                Our Story
               </a>
             </div>
             
-            {/* Trust indicators */}
+            {/* What we build */}
             <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-white/80">
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🤖</span>
-                <span>AI-Powered Solutions</span>
+                <span>AI Applications</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-2xl">🚀</span>
-                <span>Automated Workflows</span>
+                <span className="text-2xl">💜</span>
+                <span>Non-Profit Projects</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-2xl">💡</span>
-                <span>Scalable Technology</span>
+                <span className="text-2xl">🛠️</span>
+                <span>Open Source Tools</span>
               </div>
             </div>
           </div>
@@ -186,10 +183,10 @@ export default function HomePage() {
         <section id="apps" className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Featured AI Applications</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Projects</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Explore our growing collection of AI-powered applications designed to solve real-world problems. 
-                Each project demonstrates practical AI implementation for specific use cases.
+                From AI-powered applications to meaningful non-profits, each project represents our commitment to 
+                building technology that matters. See what we're working on.
               </p>
             </div>
 
@@ -198,8 +195,6 @@ export default function HomePage() {
                 <AppCard
                   key={app.id}
                   app={app}
-                  votes={getVoteCount(app.id)}
-                  onVote={vote}
                 />
               ))}
             </div>
@@ -216,39 +211,39 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                AI-Powered Innovation
+                How We Build
               </h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto">
-                Our applications leverage cutting-edge AI technologies to deliver practical solutions 
-                for everyday challenges. From smart automation to intelligent insights.
+                We combine modern technologies with thoughtful design to create applications that 
+                genuinely improve people's lives. Here's our approach to building meaningful software.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="text-4xl mb-4">🤖</div>
-                <h3 className="text-2xl font-bold text-white mb-4">Machine Learning</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Purpose-Driven</h3>
                 <p className="text-white/80">
-                  Advanced ML algorithms that learn from your data to provide personalized experiences 
-                  and automated decision-making.
+                  Every project starts with a real problem. We build technology to serve people,
+                  not the other way around.
                 </p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="text-4xl mb-4">🔗</div>
-                <h3 className="text-2xl font-bold text-white mb-4">Smart Integration</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Open & Collaborative</h3>
                 <p className="text-white/80">
-                  Seamless connectivity with existing tools and platforms, creating unified workflows 
-                  that enhance productivity.
+                  We believe in transparent development and community input. Many of our projects
+                  are open source and shaped by user feedback.
                 </p>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <div className="text-4xl mb-4">📱</div>
-                <h3 className="text-2xl font-bold text-white mb-4">User-Centric Design</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Thoughtful Technology</h3>
                 <p className="text-white/80">
-                  Intuitive interfaces that make complex AI functionality accessible to everyone, 
-                  regardless of technical expertise.
+                  We carefully choose our tech stack for each project, prioritizing maintainability,
+                  performance, and long-term sustainability.
                 </p>
               </div>
             </div>
@@ -273,7 +268,7 @@ export default function HomePage() {
       <footer className="bg-slate-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-slate-400">
-            © 2024 GrittySystems. Building the future of AI-powered applications.
+            © 2024 GrittySystems. Building technology with purpose and heart.
           </p>
         </div>
       </footer>
